@@ -7,11 +7,19 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div id="fw-wrapper" class="fw-wrapper">
+
+      <div class="grid">
+
         {{ content }}
+
       </div>
+      <!-- / grid -->
+
     </div>
+    <!-- / fw-wrapper -->
+
+    <div id="c-mask" class="c-mask"></div>
 
     {% include footer.html %}
 

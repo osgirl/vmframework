@@ -1,0 +1,73 @@
+/* ==============================================
+BASE VARIABLES
+============================================== */
+$max-site-width: 1280px;
+$base-line-height: 1.5;
+$base-font-size-px: 16;
+$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$tondobold: TondoBold;
+$tondo: Tondo;
+
+/* ==============================================
+COLOUR VARIABLES
+============================================== */
+$vm-red: #cc0000;
+$vm-purple: #9c2b73;
+
+/* ==============================================
+MEDIA QUERY VARIABLES
+============================================== */
+$xsmall: 320px;
+$small: 480px;
+
+/* =====================================
+GRID
+===================================== */
+$grid-width-S-landscape: 480;
+
+$grid-S: (
+  grid-size: 320,
+  column-width: 68,
+  column-count: 4,
+);
+
+$grid-M: (
+  grid-size: 640,
+  column-width: 68,
+  column-count: 8,
+);
+
+$grid-L: (
+  grid-size: 840,
+  column-width: 59,
+  column-count: 12
+);
+
+$grid-XL: (
+  grid-size: 1040,
+  column-width: 53.625,
+  column-count: 16
+);
+
+$padding-S: .9375em;
+
+$padding-a-M: ((map-get($grid-M, column-width) / 3) / 16) * 1rem;
+$padding-a-L: ((map-get($grid-L, column-width) / 3) / 16) * 1rem;
+$padding-a-XL: ((map-get($grid-XL, column-width) / 3) / 16) * 1rem;
+
+$padding-b-M:  $padding-a-M * 2;
+$padding-b-L:  $padding-a-L * 2;
+$padding-b-XL: $padding-a-XL * 2;
+;
+
+
+// Breakpoints
+$S: map-get($grid-S, grid-size) / $base-font-size-px *1em;      // 320px
+$Slan: $grid-width-S-landscape / $base-font-size-px *1em;   // 640px
+$M: map-get($grid-M, grid-size) / $base-font-size-px *1em;  // 640px
+$L: map-get($grid-L, grid-size) / $base-font-size-px *1em;      // 840px
+$XL:map-get($grid-XL, grid-size) / $base-font-size-px *1em; // 1040px
+
+$bp-small: 20em; // 320px
+$bp-medium: 40em; // 640px
+$bp-large: 52.5em; // 840px
