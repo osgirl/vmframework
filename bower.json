@@ -1,0 +1,18 @@
+{
+  "name": "vmframework",
+  "homepage": "https://github.com/phillgordon4/vmframework",
+  "authors": [
+    "Virgin Money"
+  ],
+  "description": "Virgin Money digital framework",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
