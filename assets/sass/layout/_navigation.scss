@@ -1,0 +1,43 @@
+.fw-nav {
+	margin: 0;
+	padding: 0;
+
+	li:before {
+		content: none;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			// text-decoration: underline;
+			border-bottom: solid 1px #FFF;
+		}
+	}
+}
+
+.fw-primary-nav {
+
+	.fw-nav__item {
+		display: inline;
+		margin: 0 40px 0 0;
+
+		&:last-child {
+			margin: 0;
+		}
+
+		a {
+			color: #FFF;
+			font-size: 17px;
+		}
+	}
+}
+
+.fw-secondary-nav {
+
+}
+
+.fw-tertiary-nav {
+
+}
+

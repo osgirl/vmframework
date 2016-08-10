@@ -1,0 +1,63 @@
+
+
+.global-header {
+	// background: linear-gradient(to right,#c00 0,#932c74 100%);
+	padding: 10px 0;
+	background: #cc0000;
+}
+
+.fw-logo {
+	width: 120px;
+	display: block;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.fw-para {
+	font-size: 16px;
+}
+
+.fw-banner {
+	background: url('/assets/img/roundels.svg') no-repeat center center;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		color: #FFF;
+		position: relative;
+		margin-top: 0;
+	}
+}
+
+.fw-hp-block {
+	border: solid 1px #F2F2F2;
+	padding: 20px;
+	box-shadow: 0 3px 3px -3px #ccc;
+	text-align: center;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		background: #F2F2F2;
+	}
+}
+
+.fw-hp-search input {
+	padding: 10px 15px;
+	border-radius: 50px;
+	width: 100%;
+	max-width: 700px;
+	position: relative;
+}
+
+.fw-discover {
+	padding: 80px 0;
+
+	header {
+		text-align: center;
+		margin: 0 0 60px 0;
+	}
+}

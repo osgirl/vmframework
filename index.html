@@ -2,22 +2,74 @@
 layout: global
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="fw-banner">
+  <div class='container'>
+  <div class="row center">
+    <div class="col-12">
+      <h1>Virgin Money Digtial Framework</h1>
+    </div>
+    <div class="col-12">
+      <form class="fw-hp-search">
+        <input type="text" placeholder="Search the digital framework">
+      </form>
+    </div>
+  </div>
+  <!-- / row -->
+  </div>
 </div>
+
+<section class="fw-discover">
+
+  <div class="container">
+      <header>
+        <h2>Discover more</h2>
+        <p>A subtitle about what you can discover</p>
+      </header>
+
+    <div class="row">
+
+      <div class="col">
+        <article class="fw-hp-block">
+          <h3>Style Guide</h3>
+          <p class="fw-para">A guide to all the elements that make up our digital offerings</p>
+          <a href="#">View</a>
+        </article>
+      </div>
+      <!-- / col -->
+
+      <div class="col">
+        <article class="fw-hp-block">
+          <h3>Standards</h3>
+          <p class="fw-para">Follow our standards to product coherent digital material.</p>
+          <a href="#">View</a>
+        </article>
+      </div>
+      <!-- / col -->
+
+      <div class="col">
+        <article class="fw-hp-block">
+          <h3>Guides</h3>
+          <p class="fw-para">Struggling with Tridion? Get a helping hand here.</p>
+          <a href="#">View</a>
+        </article>
+      </div>
+      <!-- / col -->
+
+      <div class="col">
+        <article class="fw-hp-block">
+          <h3>Downloads</h3>
+          <p class="fw-para">Download digital assets and files</p>
+          <a href="#">View</a>
+        </article>
+      </div>
+      <!-- / col -->
+
+    </div>
+    <!-- / row -->
+
+  </div>
+  <!-- / container -->
+
+</section>
+<!-- / fw-discover -->
