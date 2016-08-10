@@ -1,0 +1,36 @@
+/* =======================================
+GRID
+========================================*/
+$grid-gutter: 1rem;
+$outer-gutter: 2rem;
+$columns: 12;
+$site-max-width: 1280px;
+
+/* =======================================
+TYPE
+========================================*/
+$base-font-size: 62.5%;
+$base-line-height: 1.5;
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Fjalla One', sans-serif;
+
+/* =======================================
+COLOUR
+========================================*/
+$brand-primary: #1D1D1D;
+$brand-secondary: #CCC;
+$body-colour: #4d4d4d;
+$heading-colour: #4c5a5d;
+
+/* =======================================
+MEDIA QUERIES
+========================================*/
+$xsmall: 320px;
+$small: 480px;
+$smallmed: 600px;
+$medium: 760px;
+$large: 960px;
+$xlarge: 1024px;
+$xxlarge: 1280px;
+
+

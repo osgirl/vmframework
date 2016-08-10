@@ -1,0 +1,187 @@
+.container {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 20px;
+	@extend %clearfix;
+
+	@include bp(xxl) {
+		max-width: $site-max-width;
+		padding: 0;
+	}
+}
+
+.container--narrow {
+	max-width: 850px;
+}
+
+.row {
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-right: calc(-#{$grid-gutter} / 2);
+	margin-left: calc(-#{$grid-gutter} / 2);
+	@extend %clearfix;
+}
+
+.row-margin {
+	margin-bottom: 10px;
+}
+
+.reverse-row {
+	flex-direction: row-reverse;
+}
+
+.reverse-col {
+	flex-direction: column-reverse;
+}
+
+.box {
+	min-height: 1rem;
+	background: #CCC;
+	overflow: hidden;
+	padding: 1rem;
+}
+
+.box--nested {
+	background: #666;
+}
+
+[class*='col'] {
+	flex: 0 0 auto;
+	padding-right: calc(#{$grid-gutter} / 2);
+	padding-left: calc(#{$grid-gutter} / 2);
+}
+
+/* ==============================================
+WIDTHS
+============================================== */
+.col,
+.col-s,
+.col-sm,
+.col-m,
+.col-l,
+.col-xl,
+.col-xxl {
+	flex-grow: 1;
+  	flex-basis: 0;
+  	max-width: 100%;
+}
+
+@for $col from 1 through 12 {
+	.col-#{$col} {
+		flex-basis: 100% / $columns * $col;
+		max-width: 100% / $columns * $col;
+	}
+}
+
+@for $col from 1 through 12 {
+	@include bp(s) {
+		.col-s-#{$col} {
+			flex-basis: 100% / $columns * $col;
+			max-width: 100% / $columns * $col;
+		}
+	}
+}
+
+@for $col from 1 through 12 {
+	@include bp(sm) {
+		.col-sm-#{$col} {
+			flex-basis: 100% / $columns * $col;
+			max-width: 100% / $columns * $col;
+		}
+	}
+}
+
+@for $col from 1 through 12 {
+	@include bp(m) {
+		.col-m-#{$col} {
+			flex-basis: 100% / $columns * $col;
+			max-width: 100% / $columns * $col;
+		}
+	}
+}
+
+@for $col from 1 through 12 {
+	@include bp(l) {
+		.col-l-#{$col} {
+			flex-basis: 100% / $columns * $col;
+			max-width: 100% / $columns * $col;
+		}
+	}
+}
+
+@for $col from 1 through 12 {
+	@include bp(xl) {
+		.col-xl-#{$col} {
+			flex-basis: 100% / $columns * $col;
+			max-width: 100% / $columns * $col;
+		}
+	}
+}
+
+@for $col from 1 through 12 {
+	@include bp(xl) {
+		.col-xl-#{$col} {
+			flex-basis: 100% / $columns * $col;
+			max-width: 100% / $columns * $col;
+		}
+	}
+}
+
+/* ==============================================
+OFFSETS
+============================================== */
+@for $offset from 1 through 12 {
+	.col-offset-#{$offset} {
+		margin-left: 100% / $columns * $offset;
+	}
+}
+
+@for $offset from 1 through 12 {
+	@include bp(s) {
+		.col-offset-s-#{$offset} {
+			margin-left: 100% / $columns * $offset;
+		}
+	}
+}
+
+@for $offset from 1 through 12 {
+	@include bp(sm) {
+		.col-offset-sm-#{$offset} {
+			margin-left: 100% / $columns * $offset;
+		}
+	}
+}
+
+@for $offset from 1 through 12 {
+	@include bp(m) {
+		.col-offset-m-#{$offset} {
+			margin-left: 100% / $columns * $offset;
+		}
+	}
+}
+
+@for $offset from 1 through 12 {
+	@include bp(l) {
+		.col-offset-l-#{$offset} {
+			margin-left: 100% / $columns * $offset;
+		}
+	}
+}
+
+@for $offset from 1 through 12 {
+	@include bp(xl) {
+		.col-offset-xl-#{$offset} {
+			margin-left: 100% / $columns * $offset;
+		}
+	}
+}
+
+@for $offset from 1 through 12 {
+	@include bp(xxl) {
+		.col-offset-xxl-#{$offset} {
+			margin-left: 100% / $columns * $offset;
+		}
+	}
+}

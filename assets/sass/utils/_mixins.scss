@@ -1,0 +1,46 @@
+@mixin bp($point) {
+	// 480px
+	@if $point == s {
+		@media (min-width: $small) { 
+			@content;
+		}
+	// 600px	
+	} @else if $point == sm {
+		@media (min-width: $smallmed) {
+			@content;
+		}
+	// 768px
+	} @else if  $point == m {
+		@media (min-width: $medium) {
+			@content;
+		}
+	// 960px
+	} @else if $point == l {
+		@media (min-width: $large) {
+			@content;
+		}
+	// 1024px
+	} @else if $point == xl {
+		@media (min-width: $xlarge) {
+			@content;
+		}
+	// 1280px
+	} @else if $point == xxl {
+		@media (min-width: $xxlarge) {
+			@content;
+		}
+	}
+}
+
+%clearfix {
+    *zoom: 1;
+    &:before, 
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
