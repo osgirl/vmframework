@@ -34,10 +34,20 @@
 }
 
 .fw-secondary-nav {
-
+	background: #f2f2f2;
 }
 
 .fw-tertiary-nav {
 
+}
+
+.fw-code-example {
+	background: #444;
+	height: 100%;
+	padding: 10px;
+
+	.highlight {
+		margin: 0;
+	}
 }
 

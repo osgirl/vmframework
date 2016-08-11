@@ -1,13 +1,13 @@
-.container {
+.fw-container {
 	margin: 0 auto;
 	width: 100%;
-	padding: 0 20px;
+	padding: 0 30px;
 	@extend %clearfix;
 
-	@include bp(xxl) {
-		max-width: $site-max-width;
-		padding: 0;
-	}
+	// @include bp(xxl) {
+	// 	max-width: $site-max-width;
+	// 	padding: 0;
+	// }
 }
 
 .row {
