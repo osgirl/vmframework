@@ -1,38 +1,11 @@
 ---
-layout: global
-permalink: /main/
+layout: styles
+permalink: /components/
+title: Components
 ---
 
-<div class="o-wrapper" id="o-wrapper">
+<h1>{{ page.title }}</h1>
+<p>Some intro text about components and what they do</p>
 
-	<nav class="secondary-nav">
-		<ul>
-			<li><a href="#">Components</a>
-				<ul>
-					<li></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-
-	<button class="c-button" id="c-button--slide-right">view code</button>
-</div>
-<!-- / o-wrapper -->
-
-<div id="c-menu--slide-right" class="c-menu c-menu--slide-right fw-code-example">
-	<button class="c-menu__close">&larr; Close Menu</button>
-  	{% highlight html linenos %}
-  		<nav>
-			<ul class="fw-nav fw-secondary-nav">
-				<li><a href="#">Item</a></li>
-				<li><a href="#">Item</a></li>
-				<li><a href="#">Item</a></li>
-				<li><a href="#">Item</a></li>
-				<li><a href="#">Item</a></li>
-			</ul>
-		</nav>
-  	{% endhighlight %}
-</div><!-- /c-menu slide-right -->
-
-
-<div id="c-mask" class="c-mask"></div>
+<hr />
+<button class="c-button" id="c-button--slide-right">code example</button>
