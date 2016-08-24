@@ -1,17 +1,18 @@
 
 
 .global-header {
-	// background: linear-gradient(to right,#c00 0,#932c74 100%);
-	padding: 10px 0;
-	background: #cc0000;
+	background: linear-gradient(to right,#c00 0,#932c74 100%);
+	padding: 15px 40px;
 }
 
 .fw-logo {
 	width: 120px;
 	display: block;
+	width: 100%;
 
 	img {
-		max-width: 100%;
+		width: 100%;
+		max-width: 120px;
 	}
 }
 

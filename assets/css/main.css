@@ -2014,14 +2014,18 @@ OFFSETS
     margin-left: 100%; } }
 
 .global-header {
-  padding: 10px 0;
-  background: #cc0000; }
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #c00), to(#932c74));
+  background: -webkit-linear-gradient(left, #c00 0, #932c74 100%);
+  background: linear-gradient(to right, #c00 0, #932c74 100%);
+  padding: 15px 40px; }
 
 .fw-logo {
   width: 120px;
-  display: block; }
+  display: block;
+  width: 100%; }
   .fw-logo img {
-    max-width: 100%; }
+    width: 100%;
+    max-width: 120px; }
 
 .fw-para {
   font-size: 16px; }
@@ -2071,160 +2075,46 @@ OFFSETS
     text-align: center;
     margin: 0 0 60px 0; }
 
-.fw-nav {
+.fw-nav ul {
   margin: 0;
   padding: 0; }
-  .fw-nav li:before {
+
+.fw-nav .fw-nav__item {
+  padding: 0;
+  display: block; }
+  .fw-nav .fw-nav__item:before {
     content: none; }
-  .fw-nav a {
+  .fw-nav .fw-nav__item a {
+    color: #FFF;
+    font-size: 17px;
     text-decoration: none; }
-    .fw-nav a:hover {
-      border-bottom: solid 1px #FFF; }
 
 .fw-primary-nav .fw-nav__item {
   display: inline;
   margin: 0 40px 0 0; }
   .fw-primary-nav .fw-nav__item:last-child {
     margin: 0; }
-  .fw-primary-nav .fw-nav__item a {
-    color: #FFF;
-    font-size: 17px; }
 
 .fw-secondary-nav {
-  background: #f2f2f2; }
+  background: #cc0000;
+  padding: 40px;
+  height: 100%; }
+  .fw-secondary-nav .fw-nav__item {
+    margin: 0 0 20px 0; }
+
+.fw-100-height {
+  height: 100%; }
+
+.main-content {
+  padding: 50px 60px; }
 
 .fw-code-example {
   background: #444;
-  height: 100%;
-  padding: 10px; }
-  .fw-code-example .highlight {
-    margin: 0; }
+  padding: 30px;
+  margin: 0 0 30px 0; }
 
-/**
- * Menu overview.
- */
-.c-menu {
-  position: fixed;
-  z-index: 200;
-  background-color: #67b5d1;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s; }
-
-.c-menu__items {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-/**
- * Close button resets.
- */
-.c-menu__close {
-  color: #fff;
-  background-color: #3184a1;
+.fw-section-id {
+  text-transform: uppercase;
+  color: #CCC;
   font-size: 14px;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-border-radius: none;
-          border-radius: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer; }
-
-/**
- * Close button resets.
- */
-.c-menu__close:focus {
-  outline: none; }
-
-/**
- * Body states.
- *
- * When a menu is active, we want to hide the overflows on the body to prevent
- * awkward document scrolling.
- */
-body.has-active-menu {
-  overflow: hidden; }
-
-/**
- * Mask component
- */
-.c-mask {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  background-color: #000;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
-  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s; }
-
-.c-mask.is-active {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s; }
-
-.c-menu--slide-left,
-.c-menu--slide-right {
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll; }
-
-@media all and (min-width: 320px) {
-  .c-menu--slide-left,
-  .c-menu--slide-right {
-    width: 30%; } }
-
-.c-menu--slide-left {
-  top: 0;
-  left: 0;
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%); }
-
-@media all and (min-width: 320px) {
-  .c-menu--slide-left {
-    -webkit-transform: translateX(-600px);
-        -ms-transform: translateX(-600px);
-            transform: translateX(-600px); } }
-
-.c-menu--slide-left.is-active {
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0); }
-
-.c-menu--slide-right {
-  top: 0;
-  right: 0;
-  -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-          transform: translateX(100%); }
-
-@media all and (min-width: 320px) {
-  .c-menu--slide-right {
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%); } }
-
-.c-menu--slide-right.is-active {
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0); }
-
-.fw-code-panel {
-  background: #333; }
-
-.highlight pre {
-  white-space: pre-wrap; }
-
-.fw-empty {
-  height: 100%;
-  background: #333; }
+  display: block; }

@@ -1,14 +1,27 @@
 ---
 layout: global
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+<div class="row fw-100-height">
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+	<div class="col-m-2 fw-100-height">
+		<nav class="fw-nav fw-secondary-nav">
+			<ul>
+				<li class="fw-nav__item"><a href="#">Styles</a></li>
+				<li class="fw-nav__item"><a href="#">Media</a></li>
+				<li class="fw-nav__item"><a href="#">Navigation</a></li>
+				<li class="fw-nav__item"><a href="#">Containers</a></li>
+			</ul>
+		</nav>
+	</div>
 
-</article>
+	<div class="col">
+		<div class="main-content">
+		{{ content }}
+		</div>
+		<!-- / main-content -->
+	</div>
+
+</div>
+<!-- / row -->
+

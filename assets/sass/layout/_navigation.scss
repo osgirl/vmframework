@@ -1,17 +1,22 @@
 .fw-nav {
-	margin: 0;
-	padding: 0;
 
-	li:before {
-		content: none;
+	ul {
+		margin: 0;
+		padding: 0;
 	}
 
-	a {
-		text-decoration: none;
+	.fw-nav__item {
+		padding: 0;
+		display: block;
 
-		&:hover {
-			// text-decoration: underline;
-			border-bottom: solid 1px #FFF;
+		&:before {
+			content: none;
+		}
+
+		a {
+			color: #FFF;
+			font-size: 17px;
+			text-decoration: none;
 		}
 	}
 }
@@ -25,29 +30,16 @@
 		&:last-child {
 			margin: 0;
 		}
-
-		a {
-			color: #FFF;
-			font-size: 17px;
-		}
 	}
 }
 
 .fw-secondary-nav {
-	background: #f2f2f2;
-}
-
-.fw-tertiary-nav {
-
-}
-
-.fw-code-example {
-	background: #444;
+	background: #cc0000;
+	padding: 40px;
 	height: 100%;
-	padding: 10px;
 
-	.highlight {
-		margin: 0;
+	.fw-nav__item {
+		margin: 0 0 20px 0;
 	}
 }
 
